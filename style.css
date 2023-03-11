@@ -51,6 +51,13 @@ h1 {
   object-fit: cover;
 }
 
+/***** PAGE 5 *****/
+form {
+  background-color: #f2cc0f;
+  width: 20vw;
+  text-align: center;
+  padding: 10px;
+}
 /********** P A G E 3 **********/
 
 /* The grid: Four equal columns that floats next to each other */
