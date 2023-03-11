@@ -81,6 +81,7 @@ h1 {
 .container3 {
   position: relative;
   width: 1000px;
+  margin: 40px;
 
   display: none;
 }
