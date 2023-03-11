@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <title>MardiGras</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="mardi-logo.png" alt="Bootstrap" height="100vw" />
+            </a>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse center" id="navbarNav">
+              <ul
+                class="navbar-nav navbar-nav col-12 col-md-10 col-xl-8 center fs-2 w-100 justify-content-around"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="media.html">Media</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="FAQ.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- main     -->
+    <main>
+      <!-- The grid: five columns -->
+      <div class="container w-100">
+        <h1 style="text-align: center; color: #8cbf3b; margin: 15px">
+          Here are some pictures of people having fun!
+        </h1>
+        <div class="row" style="height: 15vh">
+          <div class="column">
+            <img
+              src="pic1page3.jpg"
+              alt="Clown"
+              style="width: 100%; aspect-ratio: 16/9; object-fit: cover"
+              onclick="bigPic(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="pic2page3.jpg"
+              alt="Lady"
+              style="width: 100%; aspect-ratio: 16/9; object-fit: cover"
+              onclick="bigPic(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="pic3page3.webp"
+              alt="A Group of people"
+              style="width: 100%; aspect-ratio: 16/9; object-fit: cover"
+              onclick="bigPic(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="pic4page3.webp"
+              alt="Lady Bird"
+              style="width: 100%; aspect-ratio: 16/9; object-fit: cover"
+              onclick="bigPic(this);"
+            />
+          </div>
+
+          </div>
+        </div>
+
+        <!-- The expanding image container -->
+        <div class="container3">
+          <!-- Close the image -->
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+          <!-- Expanded image -->
+          <img id="expandedImg" style="width: 100%" />
+
+          <!-- Image text -->
+          <div id="imgtext"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="border-top pt-3 bg-dark center">
+      <p class="text-light">Created by Liron DS &copy;</p>
+    </footer>
+  </body>
+</html>
