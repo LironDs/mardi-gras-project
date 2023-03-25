@@ -71,55 +71,64 @@
       </div>
     </header>
     <!-- main     -->
-    <main class="center row">
-      <div class="col-6  align-self-start text-center">
-      This is main
-      </div>
-      <div class="col-6  align-self-start text-center">
-      This is main2
-      </div>
+    <main>
+      <div class="flex row p-2 m-2 justify-content-around">
+        <form class="form col-12 col-md-6 rounded border">
+          <h1 class="text-center fs-5">Contact us!</h1>
 
-    </main>
+          <div>
+            <label for="contact-name-field">Name</label>
+            <input
+              required
+              minlength="2"
+              class="form-control mb-2"
+              type="text"
+              name="name"
+              id="contact-name-field"
+              autocomplete="off"
+            />
+          </div>
+          <div>
+            <label for="contact-email-field">email</label>
+            <input
+              required
+              class="form-control mb-2"
+              type="email"
+              name="email"
+              id="contact-email-field"
+              autocomplete="off"
+            />
+          </div>
 
-    <!-- main     -->
-    <!-- <main>
-      <h2 style="text-align: center; margin: 25px">You can talk to us here!</h2>
-
-      <div class="container center justify-content-around">
-        <div class="center row">
-          <h5>Tell us who you are!</h5>
-          <form name="contact">
-            <br /><br />
-            <div class="col-md-12">
-            <input id="first" type="text" placeholder="First name" required /> <br />
-            <br />
-
-            <input id="last" type="text" placeholder="Lsat name" required /> <br />
-            <br />
-            <input type="email" placeholder="Email" required /> <br />
-            <br />
-            <label>What is your question?</label> <br />
-
-            <textarea id="textArea" name="" id=""></textarea>
-
-            <br /><br />
-            <input type="submit" value="Submit" class="btn btn-primary" onclick="validation()" />
-            </div>
-          </form>
-        </div>
-        <div style="min-width: 40vw">
-          <h4>
-            Our Email is:<br />
-
-            <a href="mailto:press@mardigrasneworleans.com">press@mardigrasneworleans.com</a>
-          </h4>
+          <div>
+            <label for="contact-textarea">What's on your mind?</label>
+            <textarea
+              required
+              id="contact-textarea"
+              class="form-control mb-2"
+              class="form-control mb-2"
+              name="contact-textarea"
+              rows="4"
+              cols="50"
+            ></textarea>
+          </div>
+          <input
+            id="contact-submit-btn"
+            type="submit"
+            value="Submit"
+            class="btn btn-primary col-12 mb-2"
+          />
+        </form>
+        <div
+          class="row p-1 col-12 col-md-5 rounded border"
+          style="background-color: #f2cc0f; min-height: 360px"
+        >
           <br />
           <br />
           <h4>PO Box 73148, Metairie, LA, United States, Louisiana</h4>
           <br />
           <iframe
-            width="600"
-            height="400"
+            height="250"
             style="border: 0"
             loading="lazy"
             allowfullscreen
@@ -128,25 +137,8 @@
         </div>
       </div>
     </main>
- -->
-
-
-
     <footer class="border-top pt-3 bg-dark center">
       <p class="text-light">Created by Liron DS &copy;</p>
     </footer>
-    </body>
-    
-    </html>
-    <script>
-      function validation() {
-        const first = document.contact.first.value;
-        const last = document.contact.last.value;
-        // const textArea = document.contact.textArea.value;
-        if (first.length < 2 || last.length < 2) {
-          alert("Please enter a valid name");
-        }
-      }
-    </script>
   </body>
 </html>
