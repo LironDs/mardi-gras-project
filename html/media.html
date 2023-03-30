@@ -166,7 +166,7 @@
                   <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="media.html">Media</a>
+                  <a class="nav-link active" href="media.html">Media</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="FAQ.html">FAQ</a>
@@ -186,59 +186,61 @@
       <div class="container">
         <h1>Here are some pictures of people having fun!</h1>
         <!-- Thumbnail images -->
-        <div class="row p-2">
-          <div class="column">
+        <div class="row pb-2">
+          <div class="col-4">
             <img
               class="thumb cursor"
               src="../images/pic1page3.jpg"
               style="width: 100%"
               onclick="currentSlide(1)"
-              alt="The Woods"
+              alt="The Clown on parade"
             />
           </div>
-          <div class="column">
+          <div class="col-4">
             <img
               class="thumb cursor"
               src="../images/MardiGrasLady.jpg"
               style="width: 100%"
               onclick="currentSlide(2)"
-              alt="Cinque Terre"
+              alt="Mardi lady"
             />
           </div>
-          <div class="column">
+          <div class="col-4">
             <img
               class="thumb cursor"
               src="../images/pic3page3.webp"
               style="width: 100%"
               onclick="currentSlide(3)"
-              alt="Mountains and fjords"
+              alt="Drinking cheap BEAR!"
             />
           </div>
-          <div class="column">
+        </div>
+        <div class="row mb-2">
+          <div class="col-4">
             <img
               class="thumb cursor"
               src="../images/pic4page3.webp"
               style="width: 100%"
               onclick="currentSlide(4)"
-              alt="Northern Lights"
+              alt="Lady with a lot of feathers"
             />
           </div>
-          <div class="column">
+          <div class="col-4">
             <img
               class="thumb cursor"
               src="../images/pic5page3.jpg"
               style="width: 100%"
               onclick="currentSlide(5)"
-              alt="Nature and sunrise"
+              alt="To much people"
             />
           </div>
-          <div class="column">
+          <div class="col-4">
             <img
               class="thumb cursor"
               src="../images/mardiGrasPicVid.png"
               style="width: 100%"
               onclick="currentSlide(6)"
-              alt="Snowy Mountains"
+              alt="Mardi Video"
             />
           </div>
         </div>
@@ -291,6 +293,57 @@
           <p id="caption"></p>
         </div>
       </div>
+      <!--  ADVERTISEMENT -->
+      <div class="container mt-2" style="max-width: fit-content; max-height: fit-content">
+        <div class="card-group row">
+          <div class="card col-md-5 align-content-around">
+            <p><small>sponsored</small></p>
+            <img
+              src="../images/Museum of Death .jpg"
+              class="card-img-top object-fit-contain"
+              alt="Museum of Death"
+              width="300px"
+              height="150px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">MUSEUM OF DEATH</h5>
+              <p class="card-text">
+                Body bags, coffins, skulls, morticians, cannibalism and much more
+              </p>
+              <a
+                href="https://www.neworleans.com/listing/museum-of-death/37175/"
+                target="_blank"
+                class="btn btn-primary"
+                >Are you brave enough?</a
+              >
+            </div>
+          </div>
+          <div class="card col-md-5">
+            <p><small>sponsored</small></p>
+            <img
+              class="card-img-top object-fit-scale"
+              src="../images/bloodyMary.jpg"
+              alt="bloody Mary-haunted-museum"
+              width="300px"
+              height="150px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Haunted Museum</h5>
+              <p class="card-text">
+                Explore Ghosts, Voodoo, Vampires, the occult and haunted history with our city
+                cemetery haunted tours, paranormal ghost hunting, Always Book the best New Orlean
+                experience with Bloody Mary!
+              </p>
+              <a
+                href="https://www.neworleans.com/listing/bloody-marys-tours-haunted-museum-and-voodoo-shop/11608/"
+                target="_blank"
+                class="btn btn-primary"
+                >Visit Us!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="border-top pt-3 bg-dark center">
       <p class="text-light">Created by Liron DS &copy;</p>
@@ -331,5 +384,3 @@
     </script>
   </body>
 </html>
-
-<!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/EkIZwXbSh-Y" title="Celebrating Mardi Gras in New Orleans | National Geographic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
