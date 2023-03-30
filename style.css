@@ -29,19 +29,23 @@ main {
   margin: auto;
 }
 
-.nav-link {
-  font-family: HennyPenny;
-  font-size: 2.5rem;
-  color: #9453a6;
-}
 h5,
 h2,
 h1 {
   font-family: Pattaya;
 }
+
 .container-fluid,
 .container {
   background-color: #f2f2f2;
+}
+
+/***** PAGE 1 *****/
+
+.nav-link {
+  font-family: HennyPenny;
+  font-size: 2.5rem;
+  color: #9453a6;
 }
 
 .slide-show-img {
@@ -53,8 +57,5 @@ h1 {
 /***** PAGE 5 *****/
 form {
   background-color: #f2cc0f;
-  /* width: 20vw; */
   text-align: center;
-  /* padding: 10px; */
 }
-/********** P A G E 3 **********/
